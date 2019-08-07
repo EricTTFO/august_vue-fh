@@ -1,0 +1,66 @@
+$btnBgCols: #EF5D38;
+$btnBgCols_: red;
+$btnCol: #fff;
+
+@mixin btn-common ($btnBgCol, $radius:2px) {
+    display: inline-block;
+    border: none;
+    border-radius: $radius;
+    text-align: center;
+    cursor: pointer;
+    color: #fff;
+
+    @if $btnBgCol==#EF5D38 {
+        background-color: $btnBgCols;
+        padding: 7px 14px;
+        font-size: 12px;
+        line-height: 1;
+        margin-left: 10px;
+    }
+
+    @else if $btnBgCol==red {
+        background-color: $btnBgCols_;
+        margin-top: 1px;
+        padding: 0;
+        font-size: 20px;
+        line-height: 58px;
+        position: absolute;
+        width: 128px;
+        top: 0;
+        right: -158px;
+    }
+}
+
+.comRanking {
+    .box-card {
+        margin: 0 auto;
+    }
+
+    .text {
+        font-size: 14px;
+    }
+
+    .item {
+        margin-bottom: 18px;
+    }
+
+    .clearfix:before,
+    .clearfix:after {
+        display: table;
+        content: "";
+    }
+
+    .clearfix:after {
+        clear: both
+    }
+
+    .box-card {
+        width: 1200px;
+    }
+
+    .search {
+        float: right;
+        padding: 3px 0;
+
+    }
+}

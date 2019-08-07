@@ -1,0 +1,20 @@
+/* line 2, ../sass/rulesgame.scss */
+.rulesInfo {
+  width: 50%;
+  margin: 0 auto;
+}
+/* line 5, ../sass/rulesgame.scss */
+.rulesInfo h2 {
+  color: red;
+  font-weight: bold;
+  margin-top: 10%;
+}
+/* line 10, ../sass/rulesgame.scss */
+.rulesInfo h3 {
+  color: red;
+  font-weight: bold;
+}
+/* line 14, ../sass/rulesgame.scss */
+.rulesInfo p {
+  line-height: 3;
+}

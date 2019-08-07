@@ -1,0 +1,20 @@
+/* line 1, ../sass/footer.scss */
+.footerLink {
+  display: inline-block;
+  width: 100%;
+  background-color: #000;
+  padding: 40px;
+}
+/* line 6, ../sass/footer.scss */
+.footerLink ul {
+  width: 60%;
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-evenly;
+}
+/* line 12, ../sass/footer.scss */
+.footerLink p {
+  text-align: center;
+  padding: 20px;
+  color: #fff;
+}

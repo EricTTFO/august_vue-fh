@@ -1,0 +1,17 @@
+$red: red;
+.rulesInfo {
+    width: 50%;
+    margin: 0 auto;
+    h2 {
+        color: $red;
+        font-weight: bold;
+        margin-top: 10%;
+    }
+    h3 {
+        color: $red;
+        font-weight: bold;
+    }
+    p {
+        line-height: 3;
+    }
+}

@@ -1,0 +1,876 @@
+/* line 36, ../../../node_modules/sass-sandal/core/_mixin.scss */
+.clearfix::before, .clearfix::after {
+  content: "";
+  display: table;
+}
+/* line 41, ../../../node_modules/sass-sandal/core/_mixin.scss */
+.clearfix::after {
+  clear: both;
+}
+
+/* line 79, ../../../node_modules/sass-sandal/core/_mixin.scss */
+.ellipsis {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+/* line 177, ../../../node_modules/sass-sandal/core/_mixin.scss */
+.justify {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* line 14, ../../../node_modules/sass-sandal/core/_reset.scss */
+html {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+  height: 100%;
+}
+
+/* line 22, ../../../node_modules/sass-sandal/core/_reset.scss */
+body {
+  margin: 0;
+  font-size: 14px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Microsoft YaHei UI", "Microsoft YaHei", Roboto, "Hiragino Sans GB", "Source Han Sans CN", Fira Sans, "Droid Sans", "Helvetica Neue", arial, sans-serif;
+  line-height: 1.5;
+  color: #333;
+  background-color: #fff;
+  min-height: 100%;
+  padding-top: env(safe-area-inset-top);
+  padding-left: env(safe-area-inset-left);
+  padding-right: env(safe-area-inset-right);
+  padding-bottom: env(safe-area-inset-bottom);
+}
+
+/* line 42, ../../../node_modules/sass-sandal/core/_reset.scss */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/* line 59, ../../../node_modules/sass-sandal/core/_reset.scss */
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+}
+
+/* line 67, ../../../node_modules/sass-sandal/core/_reset.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/* line 73, ../../../node_modules/sass-sandal/core/_reset.scss */
+progress {
+  vertical-align: baseline;
+}
+
+/* line 79, ../../../node_modules/sass-sandal/core/_reset.scss */
+[hidden],
+template {
+  display: none;
+}
+
+/* line 91, ../../../node_modules/sass-sandal/core/_reset.scss */
+a {
+  background: transparent;
+  -webkit-text-decoration-skip: objects;
+  /* 2 */
+  text-decoration: none;
+  color: #08c;
+}
+/* line 97, ../../../node_modules/sass-sandal/core/_reset.scss */
+a:active {
+  outline: 0;
+}
+
+/* line 108, ../../../node_modules/sass-sandal/core/_reset.scss */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */
+}
+
+/* line 115, ../../../node_modules/sass-sandal/core/_reset.scss */
+b,
+strong {
+  font-weight: inherit;
+}
+
+/* line 121, ../../../node_modules/sass-sandal/core/_reset.scss */
+b,
+strong {
+  font-weight: bold;
+}
+
+/* line 127, ../../../node_modules/sass-sandal/core/_reset.scss */
+dfn {
+  font-style: italic;
+}
+
+/* line 132, ../../../node_modules/sass-sandal/core/_reset.scss */
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/* line 138, ../../../node_modules/sass-sandal/core/_reset.scss */
+small {
+  font-size: 80%;
+}
+
+/* line 143, ../../../node_modules/sass-sandal/core/_reset.scss */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 151, ../../../node_modules/sass-sandal/core/_reset.scss */
+sup {
+  top: -0.5em;
+}
+
+/* line 155, ../../../node_modules/sass-sandal/core/_reset.scss */
+sub {
+  bottom: -0.25em;
+}
+
+/* line 163, ../../../node_modules/sass-sandal/core/_reset.scss */
+img {
+  border: 0;
+  vertical-align: middle;
+  max-width: 100%;
+}
+
+/* line 170, ../../../node_modules/sass-sandal/core/_reset.scss */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* line 179, ../../../node_modules/sass-sandal/core/_reset.scss */
+pre {
+  overflow: auto;
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+/* line 187, ../../../node_modules/sass-sandal/core/_reset.scss */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+/* line 205, ../../../node_modules/sass-sandal/core/_reset.scss */
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+  vertical-align: middle;
+}
+
+/* line 219, ../../../node_modules/sass-sandal/core/_reset.scss */
+button,
+input,
+select {
+  overflow: visible;
+}
+
+/* line 229, ../../../node_modules/sass-sandal/core/_reset.scss */
+button,
+select {
+  text-transform: none;
+}
+
+/* line 239, ../../../node_modules/sass-sandal/core/_reset.scss */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+/* line 248, ../../../node_modules/sass-sandal/core/_reset.scss */
+[disabled] {
+  cursor: default;
+}
+
+/* line 253, ../../../node_modules/sass-sandal/core/_reset.scss */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/* line 261, ../../../node_modules/sass-sandal/core/_reset.scss */
+input {
+  line-height: normal;
+}
+
+/* line 270, ../../../node_modules/sass-sandal/core/_reset.scss */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+/* line 279, ../../../node_modules/sass-sandal/core/_reset.scss */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/* line 287, ../../../node_modules/sass-sandal/core/_reset.scss */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  box-sizing: border-box;
+}
+
+/* line 295, ../../../node_modules/sass-sandal/core/_reset.scss */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/* line 301, ../../../node_modules/sass-sandal/core/_reset.scss */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/* line 311, ../../../node_modules/sass-sandal/core/_reset.scss */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */
+}
+
+/* line 321, ../../../node_modules/sass-sandal/core/_reset.scss */
+textarea {
+  overflow: auto;
+  resize: vertical;
+  vertical-align: top;
+}
+
+/* line 329, ../../../node_modules/sass-sandal/core/_reset.scss */
+optgroup {
+  font-weight: bold;
+}
+
+/* line 334, ../../../node_modules/sass-sandal/core/_reset.scss */
+input,
+select,
+textarea,
+button {
+  outline: 0;
+}
+
+/* line 342, ../../../node_modules/sass-sandal/core/_reset.scss */
+textarea,
+input {
+  -webkit-user-modify: read-write-plaintext-only;
+}
+
+/* line 348, ../../../node_modules/sass-sandal/core/_reset.scss */
+input::-ms-clear,
+input::-ms-reveal {
+  display: none;
+}
+
+/* line 356, ../../../node_modules/sass-sandal/core/_reset.scss */
+input::-moz-placeholder,
+textarea::-moz-placeholder {
+  color: #999;
+}
+
+/* line 362, ../../../node_modules/sass-sandal/core/_reset.scss */
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+  color: #999;
+}
+
+/* line 368, ../../../node_modules/sass-sandal/core/_reset.scss */
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  color: #999;
+}
+
+/* line 374, ../../../node_modules/sass-sandal/core/_reset.scss */
+.placeholder {
+  color: #999;
+}
+
+/* line 381, ../../../node_modules/sass-sandal/core/_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 386, ../../../node_modules/sass-sandal/core/_reset.scss */
+td,
+th {
+  padding: 0;
+}
+
+/* line 394, ../../../node_modules/sass-sandal/core/_reset.scss */
+h1, h2, h3, h4, h5, h6, p, figure, form, blockquote {
+  margin: 0;
+}
+
+/* line 399, ../../../node_modules/sass-sandal/core/_reset.scss */
+ul, ol, li, dl, dd {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 404, ../../../node_modules/sass-sandal/core/_reset.scss */
+ul, ol {
+  list-style: none outside none;
+}
+
+/* line 409, ../../../node_modules/sass-sandal/core/_reset.scss */
+h1, h2, h3 {
+  line-height: 2;
+  font-weight: normal;
+}
+
+/* line 414, ../../../node_modules/sass-sandal/core/_reset.scss */
+h1 {
+  font-size: 18px;
+}
+
+/* line 418, ../../../node_modules/sass-sandal/core/_reset.scss */
+h2 {
+  font-size: 16px;
+}
+
+/* line 422, ../../../node_modules/sass-sandal/core/_reset.scss */
+h3 {
+  font-size: 14px;
+}
+
+/* line 427, ../../../node_modules/sass-sandal/core/_reset.scss */
+i {
+  font-style: normal;
+}
+
+/* line 433, ../../../node_modules/sass-sandal/core/_reset.scss */
+* {
+  box-sizing: border-box;
+}
+
+/* line 12, ../../../node_modules/sass-sandal/ext/icons-paint/_switch.scss */
+.icon-switch {
+  height: 30px;
+  width: 50px;
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  background-color: #ccc;
+  border-radius: 15px;
+  overflow: hidden;
+  z-index: 1;
+}
+/* line 22, ../../../node_modules/sass-sandal/ext/icons-paint/_switch.scss */
+.icon-switch::before {
+  content: "";
+  height: 30px;
+  width: 50px;
+  position: absolute;
+  left: -50px;
+  background-color: #099FDE;
+  border-radius: 15px;
+  transition: left 0.2s ease 0s;
+  z-index: 2;
+}
+/* line 33, ../../../node_modules/sass-sandal/ext/icons-paint/_switch.scss */
+.icon-switch::after {
+  content: "";
+  height: 26px;
+  width: 26px;
+  background-color: #fff;
+  border-radius: 15px;
+  position: absolute;
+  left: 2px;
+  top: 2px;
+  transition: left 0.2s ease 0s;
+  z-index: 3;
+}
+/* line 46, ../../../node_modules/sass-sandal/ext/icons-paint/_switch.scss */
+.icon-switch.active::before {
+  left: 0;
+}
+/* line 49, ../../../node_modules/sass-sandal/ext/icons-paint/_switch.scss */
+.icon-switch.active::after {
+  left: 22px;
+}
+
+/* line 12, ../../../node_modules/sass-sandal/ext/icons-paint/_radio-checkbox.scss */
+.icon-radio, .icon-checkbox {
+  display: inline-block;
+  vertical-align: middle;
+  width: 16px;
+  height: 16px;
+  color: #999;
+  border: 1px solid currentColor;
+  background-color: #fff;
+  position: relative;
+  top: -1px;
+  margin-right: 5px;
+  box-sizing: border-box;
+}
+/* line 24, ../../../node_modules/sass-sandal/ext/icons-paint/_radio-checkbox.scss */
+.active.icon-radio, .active.icon-checkbox {
+  color: #007aff;
+}
+/* line 27, ../../../node_modules/sass-sandal/ext/icons-paint/_radio-checkbox.scss */
+.disabled.icon-radio, .disabled.icon-checkbox {
+  color: #dbdbdb;
+}
+
+/* line 33, ../../../node_modules/sass-sandal/ext/icons-paint/_radio-checkbox.scss */
+.icon-radio {
+  border-radius: 10px;
+}
+/* line 36, ../../../node_modules/sass-sandal/ext/icons-paint/_radio-checkbox.scss */
+.icon-radio::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: currentColor;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* line 53, ../../../node_modules/sass-sandal/ext/icons-paint/_radio-checkbox.scss */
+.icon-checkbox::after {
+  content: "";
+  height: 4px;
+  width: 10px;
+  border: 1px solid currentColor;
+  border-width: 0 0 2px 2px;
+  position: absolute;
+  top: 1px;
+  left: 3px;
+  transform: rotate(-52deg);
+}
+/* line 64, ../../../node_modules/sass-sandal/ext/icons-paint/_radio-checkbox.scss */
+.icon-checkbox::before {
+  content: "";
+  width: 5px;
+  height: 6px;
+  background-color: #fff;
+  position: absolute;
+  right: -1px;
+  top: -1px;
+}
+
+/* line 7, ../../../node_modules/sass-sandal/ext/icons-paint/_v-right.scss */
+.icon-v-right {
+  position: relative;
+}
+/* line 9, ../../../node_modules/sass-sandal/ext/icons-paint/_v-right.scss */
+.icon-v-right::after {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  width: 10px;
+  height: 10px;
+  border-top: 2px solid currentColor;
+  border-right: 2px solid currentColor;
+  transform: rotate(45deg);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -2px;
+  transform: translate(-50%, -50%) rotate(45deg);
+  box-sizing: border-box;
+}
+
+/* line 7, ../../../node_modules/sass-sandal/ext/icons-paint/_v-left.scss */
+.icon-v-left {
+  position: relative;
+}
+/* line 9, ../../../node_modules/sass-sandal/ext/icons-paint/_v-left.scss */
+.icon-v-left::after {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  width: 10px;
+  height: 10px;
+  border-left: 2px solid currentColor;
+  border-bottom: 2px solid currentColor;
+  transform: rotate(45deg);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: 2px;
+  transform: translate(-50%, -50%) rotate(45deg);
+  box-sizing: border-box;
+}
+
+/* line 7, ../../../node_modules/sass-sandal/ext/icons-paint/_search.scss */
+.icon-search {
+  position: relative;
+}
+/* line 9, ../../../node_modules/sass-sandal/ext/icons-paint/_search.scss */
+.icon-search::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 2px solid currentColor;
+  height: 12px;
+  width: 12px;
+  box-sizing: border-box;
+  border-radius: 50%;
+  margin-left: -2px;
+  margin-top: -2px;
+}
+/* line 23, ../../../node_modules/sass-sandal/ext/icons-paint/_search.scss */
+.icon-search::after {
+  content: "";
+  background: currentColor;
+  height: 6px;
+  width: 2px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: 4px;
+  margin-top: 4px;
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+/* line 7, ../../../node_modules/sass-sandal/ext/icons-paint/_cross.scss */
+.icon-cross {
+  position: relative;
+}
+/* line 9, ../../../node_modules/sass-sandal/ext/icons-paint/_cross.scss */
+.icon-cross::before, .icon-cross::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 2px;
+  height: 14px;
+  transform: translate(-50%, -50%) rotate(45deg);
+  background-color: currentColor;
+}
+/* line 19, ../../../node_modules/sass-sandal/ext/icons-paint/_cross.scss */
+.icon-cross::after {
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+/* line 9, ../../../node_modules/sass-sandal/ext/icons-paint/_dots.scss */
+.icon-dots {
+  position: relative;
+}
+/* line 11, ../../../node_modules/sass-sandal/ext/icons-paint/_dots.scss */
+.icon-dots::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0);
+  width: 5px;
+  height: 5px;
+  border-radius: 3px;
+  background-color: #fff;
+  box-shadow: 10px 0 0 #fff, -10px 0 0 #fff;
+}
+
+/* line 9, ../../../node_modules/sass-sandal/ext/icons-paint/_plus.scss */
+.icon-plus {
+  position: relative;
+}
+/* line 11, ../../../node_modules/sass-sandal/ext/icons-paint/_plus.scss */
+.icon-plus::before, .icon-plus::after {
+  content: "";
+  width: 16px;
+  height: 2px;
+  background-color: currentColor;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0);
+}
+/* line 18, ../../../node_modules/sass-sandal/ext/icons-paint/_plus.scss */
+.icon-plus::after {
+  width: 2px;
+  height: 16px;
+}
+
+/* line 7, ../../../node_modules/sass-sandal/ext/icons-paint/_right.scss */
+.icon-right {
+  position: relative;
+}
+/* line 9, ../../../node_modules/sass-sandal/ext/icons-paint/_right.scss */
+.icon-right::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 14px;
+  height: 8px;
+  border-bottom: 2px solid currentColor;
+  border-left: 2px solid currentColor;
+  transform: translate(-50%, -50%) rotate(-52deg);
+  box-sizing: border-box;
+  margin-top: -1px;
+}
+
+/* line 19, ../../../node_modules/sass-sandal/ext/icons-paint/_tips.scss */
+.icon-alert, .icon-info, .icon-question, .icon-ok {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  width: 18px;
+  height: 18px;
+  border: 1px solid currentColor;
+  border-radius: 50%;
+  line-height: 16px;
+  text-align: center;
+}
+
+/* line 32, ../../../node_modules/sass-sandal/ext/icons-paint/_tips.scss */
+.icon-alert {
+  color: #ff3b30;
+}
+/* line 35, ../../../node_modules/sass-sandal/ext/icons-paint/_tips.scss */
+.icon-alert::after {
+  content: "!";
+}
+
+/* line 42, ../../../node_modules/sass-sandal/ext/icons-paint/_tips.scss */
+.icon-info {
+  color: #007aff;
+}
+/* line 45, ../../../node_modules/sass-sandal/ext/icons-paint/_tips.scss */
+.icon-info::after {
+  content: "i";
+}
+
+/* line 52, ../../../node_modules/sass-sandal/ext/icons-paint/_tips.scss */
+.icon-question {
+  color: #007aff;
+}
+/* line 55, ../../../node_modules/sass-sandal/ext/icons-paint/_tips.scss */
+.icon-question::after {
+  content: "?";
+}
+
+/* line 62, ../../../node_modules/sass-sandal/ext/icons-paint/_tips.scss */
+.icon-ok {
+  color: #4cd964;
+}
+/* line 65, ../../../node_modules/sass-sandal/ext/icons-paint/_tips.scss */
+.icon-ok::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 5px;
+  height: 2px;
+  border-bottom: 1px solid currentColor;
+  border-left: 1px solid currentColor;
+  transform: translate(-50%, -50%) rotate(-52deg) scale(1.5);
+  margin-top: -1px;
+}
+
+/* line 24, ../../../node_modules/sass-sandal/ext/_icons.scss */
+.icon-svg {
+  width: 16px;
+  height: 16px;
+  fill: currentColor;
+}
+
+/* line 30, ../../../node_modules/sass-sandal/ext/_icons.scss */
+.icon-loading {
+  animation: loadingRotate 1s linear infinite;
+}
+
+@keyframes loadingRotate {
+  to {
+    transform: rotate(360deg);
+  }
+}
+/* line 8, ../../../node_modules/sass-sandal/ext/_helper.scss */
+.fl {
+  float: left;
+}
+
+/* line 11, ../../../node_modules/sass-sandal/ext/_helper.scss */
+.fr {
+  float: right;
+}
+
+/* line 14, ../../../node_modules/sass-sandal/ext/_helper.scss */
+.fs12 {
+  font-size: 12px;
+}
+
+/* line 17, ../../../node_modules/sass-sandal/ext/_helper.scss */
+.grayc {
+  color: #ccc;
+}
+
+/* line 20, ../../../node_modules/sass-sandal/ext/_helper.scss */
+.gray9 {
+  color: #999;
+}
+
+/* line 23, ../../../node_modules/sass-sandal/ext/_helper.scss */
+.gray6 {
+  color: #666;
+}
+
+/* line 26, ../../../node_modules/sass-sandal/ext/_helper.scss */
+.p10 {
+  padding: 10px;
+}
+
+/* line 29, ../../../node_modules/sass-sandal/ext/_helper.scss */
+.plr10 {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+/* line 33, ../../../node_modules/sass-sandal/ext/_helper.scss */
+.mt10 {
+  margin-top: 10px;
+}
+
+/* line 36, ../../../node_modules/sass-sandal/ext/_helper.scss */
+.mb10 {
+  margin-bottom: 10px;
+}
+
+/* line 39, ../../../node_modules/sass-sandal/ext/_helper.scss */
+.mlr10 {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+/* line 50, ../../../node_modules/sass-sandal/ext/_helper.scss */
+.full-width {
+  width: 100%;
+}
+
+/* line 53, ../../../node_modules/sass-sandal/ext/_helper.scss */
+.pos-s {
+  position: static !important;
+}
+
+/* line 56, ../../../node_modules/sass-sandal/ext/_helper.scss */
+.fixed-bottom {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+/* line 8, ../../../node_modules/sass-sandal/ext/_page-slide.scss */
+.slide-right-in, .slide-left-out, .slide-left-in, .slide-right-out {
+  position: absolute;
+  animation-fill-mode: both;
+}
+
+/* line 14, ../../../node_modules/sass-sandal/ext/_page-slide.scss */
+.slide-right-in {
+  animation: 0.3s cubic-bezier(0.42, 0, 0.58, 1) pageRightIn;
+}
+
+/* line 18, ../../../node_modules/sass-sandal/ext/_page-slide.scss */
+.slide-left-out {
+  animation: 0.4s cubic-bezier(0.42, 0, 0.58, 1) 0.1s pageLeftOut;
+}
+
+/* line 24, ../../../node_modules/sass-sandal/ext/_page-slide.scss */
+.slide-left-in {
+  animation: 0.3s cubic-bezier(0.42, 0, 0.58, 1) pageLeftIn;
+}
+
+/* line 28, ../../../node_modules/sass-sandal/ext/_page-slide.scss */
+.slide-right-out {
+  animation: 0.4s cubic-bezier(0.42, 0, 0.58, 1) 0.1s pageRightOut;
+}
+
+@keyframes pageRightIn {
+  0% {
+    transform: translate3d(100%, 0, 0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes pageLeftOut {
+  0% {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+  100% {
+    transform: translate3d(-100%, 0, 0);
+    opacity: 0;
+  }
+}
+@keyframes pageLeftIn {
+  0% {
+    transform: translate3d(-100%, 0, 0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes pageRightOut {
+  0% {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+  100% {
+    transform: translate3d(100%, 0, 0);
+    opacity: 0;
+  }
+}

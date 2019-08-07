@@ -1,0 +1,94 @@
+/* line 34, ../sass/index.scss */
+.row {
+  width: 100%;
+  display: flex;
+}
+
+/* line 37, ../sass/index.scss */
+.col-1-2 {
+  width: 50%;
+}
+
+/* line 40, ../sass/index.scss */
+.col-1-3 {
+  width: 33.33333%;
+}
+
+/* line 43, ../sass/index.scss */
+.col-2-3 {
+  width: 66.66667%;
+}
+
+/* line 46, ../sass/index.scss */
+.col-1-4 {
+  width: 25%;
+}
+
+/* line 49, ../sass/index.scss */
+.col-3-4 {
+  width: 75%;
+}
+
+/* line 52, ../sass/index.scss */
+.col-1-5 {
+  width: 20%;
+}
+
+/* line 55, ../sass/index.scss */
+.col-2-5 {
+  width: 40%;
+}
+
+/* line 58, ../sass/index.scss */
+.col-3-5 {
+  width: 60%;
+}
+
+/* line 61, ../sass/index.scss */
+.col-4-5 {
+  width: 80%;
+}
+
+/* line 65, ../sass/index.scss */
+.alignCenter, .container .row, .container .col-1-3, .container .col-3-4, .container .col-1-4, .master .masterPersonInfo .masterUpper .masterUleft, .master .masterPersonInfo .masterUpper .masterUright, .master .masterPersonInfo .masterDowner .masterDleft, .master .masterPersonInfo .masterDowner .masterDright {
+  display: inline-block;
+  text-align: center;
+}
+
+/* line 70, ../sass/index.scss */
+.container {
+  width: 60%;
+  margin: 0 auto;
+}
+/* line 74, ../sass/index.scss */
+.container .row {
+  text-align: center;
+}
+
+/* line 92, ../sass/index.scss */
+.master .masterPersonInfo {
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
+}
+/* line 97, ../sass/index.scss */
+.master .masterPersonInfo .masterUpper .masterUleft {
+  width: 50%;
+}
+/* line 100, ../sass/index.scss */
+.master .masterPersonInfo .masterUpper .masterUleft img {
+  width: 100px;
+  height: 100px;
+}
+/* line 105, ../sass/index.scss */
+.master .masterPersonInfo .masterUpper .masterUright {
+  width: 50%;
+}
+/* line 111, ../sass/index.scss */
+.master .masterPersonInfo .masterDowner .masterDleft {
+  width: 50%;
+}
+/* line 115, ../sass/index.scss */
+.master .masterPersonInfo .masterDowner .masterDright {
+  width: 50%;
+}

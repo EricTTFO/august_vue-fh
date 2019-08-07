@@ -1,0 +1,43 @@
+/* line 7, ../sass/menu-nav.scss */
+.bgColor {
+  background-color: #E1E1E1;
+}
+
+/* line 12, ../sass/menu-nav.scss */
+.menuNav {
+  display: block;
+  margin: 0 auto;
+  width: 60%;
+}
+/* line 16, ../sass/menu-nav.scss */
+.menuNav .liStyle {
+  padding: 8px;
+}
+/* line 20, ../sass/menu-nav.scss */
+.menuNav .indexCol {
+  background-color: #FF605D;
+}
+/* line 22, ../sass/menu-nav.scss */
+.menuNav .indexCol .indexSize {
+  font-size: 25px;
+  padding: 10px;
+}
+/* line 28, ../sass/menu-nav.scss */
+.menuNav ul {
+  display: flex;
+  justify-content: space-between;
+}
+/* line 32, ../sass/menu-nav.scss */
+.menuNav a {
+  color: #000;
+  font-size: 20px;
+  font-weight: 300;
+}
+/* line 38, ../sass/menu-nav.scss */
+.menuNav :hover {
+  color: orange;
+}
+/* line 42, ../sass/menu-nav.scss */
+.menuNav .router-link-active {
+  color: red;
+}

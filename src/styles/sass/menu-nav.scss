@@ -1,0 +1,45 @@
+$bgCol: #E1E1E1;
+$activeCol: red;
+$indexCol: #FF605D;
+$indexSize: 25px;
+$hoverCol: orange;
+$linkCol: #000;
+.bgColor {
+    background-color: $bgCol;
+
+}
+
+.menuNav {
+    display: block;
+    margin: 0 auto;
+    width: 60%;
+    .liStyle {
+        padding: 8px;
+    }
+
+    .indexCol {
+        background-color: $indexCol;
+        .indexSize {
+            font-size: $indexSize;
+            padding: 10px;
+        }
+    }
+
+    ul {
+        display: flex;
+        justify-content: space-between;
+    }
+    a {
+        color: $linkCol;
+        font-size: 20px;
+        font-weight: 300;
+    }
+
+    :hover {
+        color: $hoverCol;
+    }
+
+    .router-link-active {
+        color: $activeCol;
+    }
+}

@@ -1,0 +1,31 @@
+/* line 35, ../sass/competition.scss */
+.comRanking .box-card {
+  margin: 0 auto;
+}
+/* line 39, ../sass/competition.scss */
+.comRanking .text {
+  font-size: 14px;
+}
+/* line 43, ../sass/competition.scss */
+.comRanking .item {
+  margin-bottom: 18px;
+}
+/* line 47, ../sass/competition.scss */
+.comRanking .clearfix:before,
+.comRanking .clearfix:after {
+  display: table;
+  content: "";
+}
+/* line 53, ../sass/competition.scss */
+.comRanking .clearfix:after {
+  clear: both;
+}
+/* line 57, ../sass/competition.scss */
+.comRanking .box-card {
+  width: 1200px;
+}
+/* line 61, ../sass/competition.scss */
+.comRanking .search {
+  float: right;
+  padding: 3px 0;
+}
