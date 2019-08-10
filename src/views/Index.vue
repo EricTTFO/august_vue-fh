@@ -54,10 +54,10 @@
 </template>
 
 <script>
-import { mapState, mapActions } from "vuex";
+import { mapActions, mapGetters } from "vuex";
 export default {
   computed: {
-    ...mapState(["masters"])
+    ...mapGetters(["masters"])
     // masters() {
     //     return this.$store.state.masters;
     // }
