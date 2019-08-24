@@ -1,10 +1,12 @@
 import Vue from "vue";
 import Router from "vue-router";
+import NotFound from "./views/404.vue";
+import Forbidden from "./views/403.vue";
 
 Vue.use(Router);
 
 export default new Router({
-  mode: "history",
+  mode: "hash",
   base: process.env.BASE_URL,
   routes: [
     {
@@ -14,11 +16,15 @@ export default new Router({
       children: [
         {
           path: "/",
-          redirect: "/",
+          redirect: "/comRanking",
           component: {
             render: h => h("router-view")
           },
           children: [
+            // {
+            //   path: "/test",
+            //   component: () => import("./views/Test.vue")
+            // },
             {
               path: "/setting",
               component: () => import("./views/PrizeSetting")
@@ -31,18 +37,18 @@ export default new Router({
               path: "/rules",
               component: () => import("./views/RulesGame.vue")
             },
-            {
-              path: "/",
-              component: () => import("./views/Index.vue")
-            },
+            // {
+            //   path: "/table",
+            //   component: () => import("./views/table.vue")
+            // },
             {
               path: "/arena",
               component: () => import("./views/Arena.vue")
             },
-            {
-              path: "/mall",
-              component: () => import("./views/PointsMall.vue")
-            },
+            // {
+            //   path: "/mall",
+            //   component: () => import("./views/PointsMall.vue")
+            // },
             {
               path: "/invitFriend",
               component: () => import("./views/InviteFriends.vue")
@@ -50,6 +56,18 @@ export default new Router({
           ]
         }
       ]
+    },
+    {
+      path: "/403",
+      name: "403",
+      hideInMenu: true,
+      component: Forbidden
+    },
+    {
+      path: "*",
+      name: "404",
+      hideInMenu: true,
+      component: NotFound
     }
   ]
 });
