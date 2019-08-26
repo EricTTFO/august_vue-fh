@@ -20,8 +20,10 @@
           )
         "
         highlight-current-row
+        :formatter="formatter"
         :default-sort="{ prop: 'day_ranking', order: 'ascending' }"
       >
+        <!-- :default-sort="{ prop: 'day_ranking', order: 'ascending' }" -->
         <!-- :class="fontCol" -->
         <!-- 'color:'+ ( (rankingInfo > 0) ? 'red' : 'green') -->
         <el-table-column
@@ -32,7 +34,7 @@
         >
           <template slot-scope="scope">
             <span
-              v-if="scope.row.day_ranking == 0"
+              v-if="scope.row.day_ranking == 9999"
               style="color:#000; fontSize:18px;"
               >-</span
             >
@@ -126,7 +128,7 @@
         <el-table-column sortable prop="yester_ranking" label="昨日排名">
           <template slot-scope="scope">
             <span
-              v-if="scope.row.yester_ranking == 0"
+              v-if="scope.row.yester_ranking == 9999"
               style="color:#000; fontSize:18px;"
               >-</span
             >
@@ -217,7 +219,10 @@ export default {
       // console.log(`当前页: ${val}`);
       this.currentPage = val; //动态改变
     },
-    ...mapActions(["fetchRankinginfo"])
+    ...mapActions(["fetchRankinginfo"]),
+    formatter(row, column) {
+      return row.rowNum + "." + row.address;
+    }
   },
 
   created() {

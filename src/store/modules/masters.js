@@ -29,7 +29,7 @@ const actions = {
   },
   async fetchRankinginfo({ commit }) {
     const rs = await Axios.post(MASTERS_API);
-    // console.log(rs.data[0]);
+    // console.log(rs.data);
     commit("setRankingInfo", rs.data);
     commit("setRankingId", rs.data);
   }

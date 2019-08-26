@@ -1,6 +1,6 @@
 <template>
   <div class="prizeSetting">
-    <img src="../assets/images/jxsz_pc.jpg" alt />
+    <img src="../assets/imgs/10.jpg" alt />
   </div>
 </template>
 
