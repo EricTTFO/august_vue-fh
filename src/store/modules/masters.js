@@ -1,6 +1,6 @@
 import Axios from "axios";
 
-const MASTERS_API = "http://www.fhcp.com/home/index/user";
+const MASTERS_API = "home/index/user";
 
 const state = {
   masters: [],

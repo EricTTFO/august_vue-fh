@@ -1,6 +1,6 @@
 // vue.config.js
 module.exports = {
-  publicPath: process.env.NODE_ENV === "production" ? "/fh/" : "/",
+  publicPath: process.env.NODE_ENV === "production" ? "/" : "/",
   devServer: {
     proxy: {
       "/apis": {
