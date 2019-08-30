@@ -22,6 +22,10 @@
             <!-- indexCol -->
             <a href="http://yihai3.com/" class="indexSize">主页</a>
           </li>
+          <li class="">
+            <!-- indexCol -->
+            <a href="http://yihai008.com/" class="indexSize">比赛报名</a>
+          </li>
           <!-- <li>
             <router-link to="/arena" class="liStyle" ></router-link>
           </li> -->
